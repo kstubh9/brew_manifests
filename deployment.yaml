@@ -18,7 +18,7 @@ spec:
         app: landing_page
     spec:
       containers:
-      - image: kstubh/landing-page
+      - image: kstubh/landing-page:latest
         name: landing_page
         resources: {}
 status: {}
