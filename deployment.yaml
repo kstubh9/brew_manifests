@@ -1,19 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
+  name: landing_page
+  namespace: arn:aws:eks:ap-south-1:440661626547:cluster/landing_page  
   labels:
     app: landing_page
-  name: landing_page
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: landing_page
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: landing_page
     spec:
@@ -22,11 +20,13 @@ spec:
         name: landing_page
         resources: {}
 status: {}
+
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: lb-service
+  namespace: arn:aws:eks:ap-south-1:440661626547:cluster/landing_page  
   labels:
     app: lb-service
 spec:
