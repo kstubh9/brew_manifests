@@ -14,7 +14,7 @@ This project showcases an end-to-end DevOps pipeline for fictitious 'Brew' Coffe
 
 ## Project Highlights
 
-This repository contains manifests for ArgoCD. Bulk of the project is contained in [landing_page_pipeline](https://github.com/kstubh9/landing_page_pipeline)
+This repository contains manifests for ArgoCD. Bulk of the project is contained in [BREW PIPELINE](https://github.com/kstubh9/brew_pipeline)
 
 
 ## Project Structure
